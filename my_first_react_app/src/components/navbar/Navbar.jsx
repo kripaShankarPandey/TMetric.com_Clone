@@ -1,6 +1,7 @@
 import { Flex, Spacer ,Box,Heading,Button,ButtonGroup ,Image} from '@chakra-ui/react'
 import { MdBuild , MdCall } from "react-icons/md";
 import { Icon } from '@chakra-ui/react';
+// Nav Bar one
 const Navbar=()=>{
     return(
 <Flex minWidth='max-content' justifyContent="space-arount" alignItems='center' gap='2'bg="#fff0b8">
