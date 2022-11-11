@@ -5,6 +5,8 @@ import { MdSettings } from 'react-icons/md'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 
 const Navbar=()=>{
+  //TO make position sticky
+  // sx={{ position: '-webkit-sticky', /* Safari */ position: 'sticky', top: '0', }}>
     return(
 <HStack minWidth='max-content' justifyContent="space-between" alignItems='center' gap='2' bg="#fff0b8">
   <Flex ml="3vw" p='2'  w="20%" alignItems="center">

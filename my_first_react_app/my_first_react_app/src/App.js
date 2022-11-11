@@ -1,15 +1,12 @@
 import { Box } from "@chakra-ui/react";
-import Navbar from "./components/navbar/Navbar";
-import Topbanner from "./components/banner/Topbanner"
-import Mainfooter from "./components/footer/Mainfooter"
-import { UpperFooter } from "./components/footer/UpperFooter";
+import Home from "./components/home_page/Home";
+import Login from "./components/Login";
 function App() {
   return (
     <Box>
-       <Navbar/>
-       <Topbanner/>
-       <UpperFooter/>
-       <Mainfooter/>
+     {/* <Home/> */}
+     <Login/>
+      
     </Box>
      
     

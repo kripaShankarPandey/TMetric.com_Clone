@@ -3,7 +3,7 @@ import { FaChrome,FaSafari,FaEdge,FaFirefox,FaDesktop,FaApple,FaAndroid,FaYoutub
 const Mainfooter=()=>{
  return(
     <Box bg="#ebedf0" border="1px solid #ebedf0" fontFamily='
-    PTRootUIMedium, sans-serif' >
+    PTRootUIMedium, sans-serif' fontSize="lg" color="gray.600" >
         <Box w="90%" m="auto"  >
             <Stack direction="row" gap="7%" h="260px" mt="50px">
                 <Box>
