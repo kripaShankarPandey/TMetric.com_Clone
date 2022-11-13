@@ -11,19 +11,24 @@ import {
     Link,
     HStack,
   } from '@chakra-ui/react';
+  import {NavLink} from "react-router-dom";
   
-  export default function Login() {
+  export default function Signup() {
     return (
     <Box  bg="#f6f7f8" h="100vh" w="100%">
         <Box border="1px solid rgb(242,245,252)">
-            <Stack w="35%" h="100vh" m="auto" bg="white"  direction={{ base: 'column', md: 'row' }}>
+            <Stack w="80%" h="100vh" m="auto" bg="white"  direction={{ base: 'column', md: 'row' }}>
         <Flex  flex={1} mt="30px" justify={'center'}>
           <Stack spacing={3} w={'full'} maxW={'md'}>
             <Flex justifyContent="center" >
             <Image  w="50%" src="https://id.tmetric.com/images/tmetric_logo_and_text.svg" alt="logo"/>
             </Flex>
           
-            <Text textAlign="center" fontSize={'3xl'}>Log into TMetric</Text>
+            <Text textAlign="center" fontSize={'3xl'}>Create  your account</Text>
+            <FormControl id="name">
+              <FormLabel>Enter Full Name</FormLabel>
+              <Input type="text" placeholder="John Smith" />
+            </FormControl>
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
               <Input type="email" placeholder="johnsmit@masaischool.com" />
@@ -34,7 +39,7 @@ import {
             </FormControl>
             <Stack spacing={6}>
               <Button colorScheme={'blue'} variant={'solid'}>
-                Login
+                Sign up
               </Button>
             </Stack>
             <Text textAlign="center">or</Text>
@@ -51,13 +56,22 @@ import {
             <Text>Sign Up with Apple</Text>
             </HStack>
             <HStack>
-            <Text mr="-4px"> Have not an account? </Text>
-            <Link >Sign Up</Link>
+            <Text mr="-4px">Already have an account? </Text>
+            <NavLink to="/login">Log in</NavLink>
             </HStack>
             
           </Stack>
         </Flex>
-        </Stack>
+        <Flex  bg="#f2f5fc" flex={1} >
+          <Image
+            alt={'Login Image'}
+            objectFit={'cover'}
+            src={
+              'https://id.tmetric.com/images/side_image_register.svg'
+            }
+          />
+        </Flex>
+            </Stack>
         </Box>
     </Box>
     );
