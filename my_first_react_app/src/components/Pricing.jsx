@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import Mainfooter from './footer/Mainfooter';
 import { UpperFooter } from './footer/UpperFooter';
 import Navbar2 from './navbar/Navbar2';
+import { FaTimes } from "react-icons/fa";
 import {
   Box,
   Stack,
@@ -35,18 +36,10 @@ export default function Pricing() {
     <Box >
       <Navbar2/>
       <VStack h="350px" bg="#e8edff">
-        <Heading size="3xl" pt="60px">Pricing</Heading>
-        <Text fontWeight="bold" pt="45px">All plans include free 30-day trial. No credit card required!</Text>
+        <Heading size="4xl" pt="60px">Pricing</Heading>
+        <Text fontWeight="bold" pt="45px">All plans include free 30-day trial. </Text>
       </VStack>
-      <VStack spacing={2} textAlign="center">
-        <Heading as="h1" fontSize="4xl">
-          Plans that fit your need
-        </Heading>
-        <Text fontSize="lg" color={'gray.500'}>
-          Start with 14-day free trial. No credit card needed. Cancel at
-          anytime.
-        </Text>
-      </VStack>
+     
       <Stack
         direction={{ base: 'column', md: 'row' }}
         textAlign="center"
@@ -55,17 +48,17 @@ export default function Pricing() {
         py={10}>
         <PriceWrapper>
           <Box py={4} px={12}>
-            <Text fontWeight="500" fontSize="2xl">
-              Hobby
+            <Text fontWeight="900" fontSize="4xl">
+              Business
             </Text>
             <HStack justifyContent="center">
-              <Text fontSize="3xl" fontWeight="600">
+              <Text fontSize="4xl" fontWeight="600">
                 $
               </Text>
               <Text fontSize="5xl" fontWeight="900">
-                79
+                7
               </Text>
-              <Text fontSize="3xl" color="gray.500">
+              <Text fontSize="4xl" color="gray.500">
                 /month
               </Text>
             </HStack>
@@ -77,15 +70,83 @@ export default function Pricing() {
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                unlimited build minutes
+                Time tracking
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                Lorem, ipsum dolor.
+                Unlimited projects and clients
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                5TB Lorem, ipsum dolor.
+                Reporting
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Timer button in 50+ web apps
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Calendar integrations: Google, Outlook
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Billable rates and money tracking
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Budgeting for projects
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Invoicing
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Task management
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Activity levels for employees
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Apps and sites usage reports
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Client logins for access to reports
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Paid time off tracking
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Payroll for employees
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Time tracking permissions
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Time-sync with Jira and QuickBooks
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Time-sync with GitLab and Redmine
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Time Off Calendar
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Work Schedule
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Team Dashboard/Personal Dashboard
               </ListItem>
             </List>
             <Box w="80%" pt={7}>
@@ -116,17 +177,17 @@ export default function Pricing() {
               </Text>
             </Box>
             <Box py={4} px={12}>
-              <Text fontWeight="500" fontSize="2xl">
-                Growth
+              <Text fontWeight="900" fontSize="4xl">
+                Professional
               </Text>
               <HStack justifyContent="center">
-                <Text fontSize="3xl" fontWeight="600">
+                <Text fontSize="4xl" fontWeight="600">
                   $
                 </Text>
                 <Text fontSize="5xl" fontWeight="900">
-                  149
+                  5
                 </Text>
-                <Text fontSize="3xl" color="gray.500">
+                <Text fontSize="4xl" color="gray.500">
                   /month
                 </Text>
               </HStack>
@@ -135,28 +196,88 @@ export default function Pricing() {
               bg={useColorModeValue('gray.50', 'gray.700')}
               py={4}
               borderBottomRadius={'xl'}>
-              <List spacing={3} textAlign="start" px={12}>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  unlimited build minutes
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  Lorem, ipsum dolor.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  5TB Lorem, ipsum dolor.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  5TB Lorem, ipsum dolor.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  5TB Lorem, ipsum dolor.
-                </ListItem>
-              </List>
+                   <List spacing={3} textAlign="start" px={12}>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Time tracking
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Unlimited projects and clients
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Reporting
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Timer button in 50+ web apps
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Calendar integrations: Google, Outlook
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Billable rates and money tracking
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Budgeting for projects
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Invoicing
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Task management
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Activity levels for employees
+              </ListItem>
+              <ListItem>
+                <ListIcon  as={FaTimes} color="red.300"/>
+                Apps and sites usage reports
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Client logins for access to reports
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Paid time off tracking
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Payroll for employees
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Time tracking permissions
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Time-sync with Jira and QuickBooks
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Time-sync with GitLab and Redmine
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Time Off Calendar
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Work Schedule
+              </ListItem>
+              <ListItem>
+                <ListIcon  as={FaTimes} color="red.300"/>
+                Team Dashboard/Personal Dashboard
+              </ListItem>
+            </List>
               <Box w="80%" pt={7}>
                 <Button w="full" colorScheme="red">
                   Start trial
@@ -167,17 +288,17 @@ export default function Pricing() {
         </PriceWrapper>
         <PriceWrapper>
           <Box py={4} px={12}>
-            <Text fontWeight="500" fontSize="2xl">
-              Scale
+            <Text fontWeight="900" fontSize="4xl">
+              Free
             </Text>
             <HStack justifyContent="center">
-              <Text fontSize="3xl" fontWeight="600">
+              <Text fontSize="4xl" fontWeight="600">
                 $
               </Text>
               <Text fontSize="5xl" fontWeight="900">
-                349
+                0
               </Text>
-              <Text fontSize="3xl" color="gray.500">
+              <Text fontSize="4xl" color="gray.500">
                 /month
               </Text>
             </HStack>
@@ -186,18 +307,86 @@ export default function Pricing() {
             bg={useColorModeValue('gray.50', 'gray.700')}
             py={4}
             borderBottomRadius={'xl'}>
-            <List spacing={3} textAlign="start" px={12}>
+                 <List spacing={3} textAlign="start" px={12}>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                unlimited build minutes
+                Time tracking
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                Lorem, ipsum dolor.
+                Unlimited projects and clients
               </ListItem>
               <ListItem>
                 <ListIcon as={FaCheckCircle} color="green.500" />
-                5TB Lorem, ipsum dolor.
+                Reporting
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaCheckCircle} color="green.500" />
+                Timer button in 50+ web apps
+              </ListItem>
+              <ListItem>
+              <ListIcon  as={FaTimes} color="red.300"/>
+                Calendar integrations: Google, Outlook
+              </ListItem>
+              <ListItem>
+                <ListIcon  as={FaTimes} color="red.300"/>
+                Billable rates and money tracking
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Budgeting for projects
+              </ListItem>
+              <ListItem>
+                <ListIcon  as={FaTimes} color="red.300"/>
+                Invoicing
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Task management
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Activity levels for employees
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Apps and sites usage reports
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Client logins for access to reports
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Paid time off tracking
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Payroll for employees
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Time tracking permissions
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Time-sync with Jira and QuickBooks
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Time-sync with GitLab and Redmine
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Time Off Calendar
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaTimes} color="red.300" />
+                Work Schedule
+              </ListItem>
+              <ListItem>
+              <ListIcon as={FaTimes} color="red.300" />
+                Team Dashboard/Personal Dashboard
               </ListItem>
             </List>
             <Box w="80%" pt={7}>

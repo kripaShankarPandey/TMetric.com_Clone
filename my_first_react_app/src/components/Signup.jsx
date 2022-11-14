@@ -8,7 +8,6 @@ import {
     Stack,
     Image,
     Box,
-    Link,
     HStack,
   } from '@chakra-ui/react';
   import {NavLink} from "react-router-dom";
@@ -37,11 +36,16 @@ import {
               <FormLabel>Password</FormLabel>
               <Input type="password" placeholder='Enter your password' />
             </FormControl>
-            <Stack spacing={6}>
-              <Button colorScheme={'blue'} variant={'solid'}>
-                Sign up
-              </Button>
-            </Stack>
+            
+            <NavLink to="/login">
+                <Stack spacing={6}>
+                  <Button colorScheme={'blue'} variant={'solid'}>
+                    Sign up
+                  </Button> 
+                  </Stack>
+              </NavLink>
+              
+            
             <Text textAlign="center">or</Text>
             <HStack border="1px solid rgb(216, 211, 210)" borderRadius="4px" justifyContent="center" p="5px">
             <Image src="https://id.tmetric.com/images/google_logo.svg" alt="icon"/>

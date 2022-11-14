@@ -27,7 +27,7 @@ const Navbar=()=>{
   <ButtonGroup gap='2' pr="1.5vw"  >
   <NavLink to="/login"> <Button colorScheme='teal' variant='unstyled' color="black" _hover={{color: "blue" }}> Log in</Button></NavLink> 
   
-  <NavLink to="/login"><Button colorScheme='blue' variant="outline" _hover={{ bg: "blue",color: "white" }}  >Sign Up</Button></NavLink>
+  <NavLink to="/signup"><Button colorScheme='blue' variant="outline" _hover={{ bg: "blue",color: "white" }}  >Sign Up</Button></NavLink>
   </ButtonGroup>
 </HStack>
 );
