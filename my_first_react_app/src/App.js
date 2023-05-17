@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/home_page/Home";
  import Login from "./components/Login";
@@ -9,9 +9,9 @@ function App() {
     <>
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/Login" element={<Login />} />
-      <Route exact path="/Signup" element={<Signup />} />
-      <Route exact path="/Pricing" element={<Pricing />} />
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/signup" element={<Signup />} />
+      <Route exact path="/pricing" element={<Pricing />} />
     </Routes>
     </>
      
